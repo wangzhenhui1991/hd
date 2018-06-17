@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wzh.hadoop</groupId>
+    <artifactId>hadoop-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>parent</name>
+
+    <properties>
+        <account.version>0.0.1-SNAPSHOT</account.version>
+    </properties>
+
+    <!--<parent>-->
+        <!--<groupId>com.tuhu</groupId>-->
+        <!--<artifactId>tuhu-project-parent</artifactId>-->
+        <!--<version>1.0.2017122501</version>-->
+    <!--</parent>-->
+
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>nexus_public</id>-->
+            <!--<url>http://maven.tuhu.work:8081/nexus/content/groups/public/</url>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+    <!--<pluginRepositories>-->
+        <!--<pluginRepository>-->
+            <!--<id>nexus_public</id>-->
+            <!--<url>http://maven.tuhu.work:8081/nexus/content/groups/public/</url>-->
+        <!--</pluginRepository>-->
+    <!--</pluginRepositories>-->
+
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>release</id>-->
+            <!--<name>release仓库</name>-->
+            <!--<url>http://maven.tuhu.work:8081/nexus/content/repositories/releases/</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>snapshots</id>-->
+            <!--<name>snapshots</name>-->
+            <!--<url>http://maven.tuhu.work:8081/nexus/content/repositories/snapshots/</url>-->
+        <!--</snapshotRepository>-->
+    <!--</distributionManagement>-->
+
+    <modules>
+        <module>hdfs</module>
+        <module>hadoopmr</module>
+    </modules>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-common -->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-common</artifactId>
+                <version>2.7.3</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-hdfs -->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-hdfs</artifactId>
+                <version>2.7.3</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client -->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-client</artifactId>
+                <version>2.7.3</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+</project>
