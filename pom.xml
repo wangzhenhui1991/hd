@@ -14,38 +14,6 @@
         <account.version>0.0.1-SNAPSHOT</account.version>
     </properties>
 
-    <!--<parent>-->
-        <!--<groupId>com.tuhu</groupId>-->
-        <!--<artifactId>tuhu-project-parent</artifactId>-->
-        <!--<version>1.0.2017122501</version>-->
-    <!--</parent>-->
-
-    <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>nexus_public</id>-->
-            <!--<url>http://maven.tuhu.work:8081/nexus/content/groups/public/</url>-->
-        <!--</repository>-->
-    <!--</repositories>-->
-    <!--<pluginRepositories>-->
-        <!--<pluginRepository>-->
-            <!--<id>nexus_public</id>-->
-            <!--<url>http://maven.tuhu.work:8081/nexus/content/groups/public/</url>-->
-        <!--</pluginRepository>-->
-    <!--</pluginRepositories>-->
-
-    <!--<distributionManagement>-->
-        <!--<repository>-->
-            <!--<id>release</id>-->
-            <!--<name>release仓库</name>-->
-            <!--<url>http://maven.tuhu.work:8081/nexus/content/repositories/releases/</url>-->
-        <!--</repository>-->
-        <!--<snapshotRepository>-->
-            <!--<id>snapshots</id>-->
-            <!--<name>snapshots</name>-->
-            <!--<url>http://maven.tuhu.work:8081/nexus/content/repositories/snapshots/</url>-->
-        <!--</snapshotRepository>-->
-    <!--</distributionManagement>-->
-
     <modules>
         <module>hdfs</module>
         <module>hadoopmr</module>
